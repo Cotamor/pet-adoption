@@ -5,6 +5,9 @@ html {
   box-sizing: border-box;
   background-color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Source Sans 3', sans-serif;
 }
