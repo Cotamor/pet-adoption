@@ -1,0 +1,263 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+/* Top Section */
+.actual-top-content {
+  position: relative;
+  z-index: 5;
+}
+
+.top-section-wrapper {
+  background-color: #001d37;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: hidden;
+}
+
+.top-section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+.top-section h1 {
+  font-size: 4rem;
+  line-height: 97.3%;
+  margin: 0;
+  max-width: 525px;
+}
+
+.intro-text {
+  font-size: 1.25rem;
+  line-height: 169.3%;
+  margin: 1rem 0;
+  max-width: 435px;
+}
+
+.intro-buttons {
+  margin-bottom: 70px;
+}
+
+.our-btn {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background-color: #475aff;
+  border: 2px solid #475aff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-out, border 0.3s ease-out,
+    color 0.3s ease-out;
+}
+.our-btn:hover {
+  background-color: #2c3ab8;
+  border: 2px solid #2c3ab8;
+}
+.our-btn--outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.our-btn--outline:hover {
+  background-color: white;
+  border: 2px solid white;
+  color: #475aff;
+}
+
+.utility-mr {
+  margin-right: 10px;
+}
+
+.intro-features {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+@media screen and (min-width: 580px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  .intro-features {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.intro-feature {
+  padding: 35px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.intro-feature h2 {
+  font-size: 1.5rem;
+  margin: 31px 0 3px 0;
+}
+
+.intro-feature p {
+  font-size: 1.0625rem;
+  margin: 0;
+}
+
+.circle {
+  position: absolute;
+  top: 62px;
+  right: -390px;
+  width: 617px;
+  height: 617px;
+  background-color: #d660ff;
+  filter: blur(150px);
+  opacity: 0.85;
+  border-radius: 50%;
+}
+.circle-two {
+  position: absolute;
+  top: -360px;
+  left: -120px;
+  width: 617px;
+  height: 617px;
+  background-color: #6079ff;
+  filter: blur(150px);
+  opacity: 0.85;
+  border-radius: 50%;
+}
+/* Page Section */
+.page-section {
+  background-color: white;
+  padding: 70px 16px;
+}
+
+.page-section-inner {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+.page-section-title {
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.pet-filter {
+  color: #9f9f9f;
+  font-size: 1.15rem;
+}
+
+.pet-filter button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.15rem;
+  color: #9f9f9f;
+}
+
+/* Pet Card */
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  column-gap: 34px;
+  row-gap: 16px;
+}
+
+.pet-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  background-color: white;
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.pet-card-text {
+  padding: 18px 16px;
+}
+
+.pet-card-text h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.pet-description {
+  margin: 0 0 0.9rem 0;
+  color: #626262;
+  line-height: 150%;
+}
+
+.pet-age {
+  color: #a2a2a2;
+  font-size: 0.875rem;
+}
+/* Footer */
+.site-footer {
+  color: #9f9f9f;
+  text-align: center;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0 0 65px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .top-section h1 {
+    font-size: 6.25rem;
+  }
+  .top-section {
+    padding-top: 139px;
+    padding-bottom: 139px;
+  }
+  .intro-buttons {
+    margin-bottom: 129px;
+  }
+
+  .page-section {
+    padding: 130px 16px;
+  }
+
+  .page-section-title {
+    font-size: 5.3125rem;
+  }
+
+  .pet-filter {
+    font-size: 1.375rem;
+  }
+
+  .pet-filter button {
+    font-size: 1.375rem;
+  }
+  .list-of-pets {
+    row-gap: 28px;
+  }
+  .pet-card {
+    grid-template-columns: 165px 1fr;
+  }
+
+  .pet-card-text {
+    padding: 21px 29px;
+  }
+  .pet-description {
+    margin: 0 0 1rem 0;
+  }
+}
