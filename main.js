@@ -14,9 +14,21 @@ async function start() {
   const ourTemperature = weatherData.properties.periods[0].temperature
 
   const convertedToC = ((ourTemperature - 32) / 1.8).toFixed(0)
-  console.log(convertedToC)
   const tempOutput = document.querySelector('#temp-output')
   tempOutput.textContent = convertedToC
 }
 
 start()
+
+async function petsArea() {
+  const petsPromise = await fetch(
+    'https://learnwebcode.github.io/bootcamp-pet-data/pets.json'
+  )
+  const petsData = await petsPromise.json()
+
+  petsData.forEach((pet) => {
+    console.log(pet.name)
+  })
+}
+
+petsArea()
