@@ -193,6 +193,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
+
 .pet-card-photo {
   order: 1;
   grid-row: 1;
