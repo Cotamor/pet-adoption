@@ -28,7 +28,6 @@ async function petsArea() {
     'https://learnwebcode.github.io/bootcamp-pet-data/pets.json'
   )
   const petsData = await petsPromise.json()
-  console.log('Petsdata', petsData)
 
   petsData.forEach((pet) => {
     const clone = template.content.cloneNode(true)
@@ -55,4 +54,18 @@ function createAgeText(birthYear) {
   if (age == 0) return 'Less than a year old'
 
   return `${age} years old`
+}
+
+// Pet filter button code
+const allButtons = document.querySelectorAll('.pet-filter button')
+allButtons.forEach((el) => {
+  el.addEventListener('click', handleButtonClick)
+})
+
+function handleButtonClick(e) {
+  // remove active class from any and all buttons
+  allButtons.forEach((el) => el.classList.remove('active'))
+  // add active class to the specific button that just got clicked
+  e.target.classList.add('active')
+  // filter the pets down below
 }
