@@ -163,6 +163,16 @@ body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1.15rem;
   color: #9f9f9f;
+  cursor: pointer;
+}
+
+.pet-filter button:not(.active):hover {
+  color: #7d7d7d;
+}
+
+.pet-filter .active {
+  color: #475aff;
+  text-decoration: underline;
 }
 
 /* Pet Card */
@@ -183,6 +193,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
+
 .pet-card-photo {
   order: 1;
   grid-row: 1;
